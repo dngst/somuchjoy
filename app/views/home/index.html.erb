@@ -1,6 +1,10 @@
 <% @images.each_with_index do |path, index| %>
   <%= image_tag(
     "#{File.basename(path)}",
+    data: {
+      controller: "drag",
+      action: "mousedown->drag#startDrag mousemove->drag#drag mouseup->drag#stopDrag",
+    },
     style: "position: absolute; top: #{@positions[index][:top]}px; left: #{@positions[index][:left]}px; width: 15rem;"
   ) %>
 <% end %>
