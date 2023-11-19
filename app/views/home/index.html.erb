@@ -1,6 +1,6 @@
 <% @images.each_with_index do |path, index| %>
   <%= image_tag(
     "#{File.basename(path)}",
-    style: "position: absolute; top: #{@positions[index][:top]}px; left: #{@positions[index][:left]}px; width: 10rem;"
+    style: "position: absolute; top: #{@positions[index][:top]}px; left: #{@positions[index][:left]}px; width: 15rem;"
   ) %>
 <% end %>

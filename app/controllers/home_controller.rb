@@ -12,7 +12,7 @@ class HomeController < ApplicationController
     count.times do
       position = {
         top: rand(0..500),
-        left: rand(0..1200)
+        left: rand(0..1000)
       }
       positions << position
     end
