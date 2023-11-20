@@ -5,6 +5,6 @@
       controller: "drag",
       action: "mousedown->drag#startDrag mousemove->drag#drag mouseup->drag#stopDrag",
     },
-    style: "position: absolute; top: #{@positions[index][:top]}px; left: #{@positions[index][:left]}px; width: 15rem;"
+    style: "top: #{@positions[index][:top]}px; left: #{@positions[index][:left]}px;"
   ) %>
 <% end %>

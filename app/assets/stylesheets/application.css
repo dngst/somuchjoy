@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+img {
+  position: absolute;
+  width: 15rem;
+}
+
 img:hover {
   cursor: move;
   z-index: 9;
