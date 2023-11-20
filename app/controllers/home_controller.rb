@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @images = Dir.glob('app/assets/images/*')
-    @positions = generate_random_positions(@images.count)
+    @positions = generate_random_positions(@images.size)
   end
 
   private
