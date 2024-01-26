@@ -8,8 +8,5 @@ AllCops:
     - 'db/**/*'
     - 'config/**/*'
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
 Style/Documentation:
   Enabled: false
