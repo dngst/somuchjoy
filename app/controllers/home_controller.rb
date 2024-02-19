@@ -9,16 +9,6 @@ class HomeController < ApplicationController
   private
 
   def generate_random_positions(count)
-    positions = []
-
-    count.times do
-      position = {
-        top: rand(0..500),
-        left: rand(0..1000)
-      }
-      positions << position
-    end
-
-    positions
+    Array.new(count) { { top: rand(0..500), left: rand(0..1000) } }
   end
 end
