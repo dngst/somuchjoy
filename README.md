@@ -4,6 +4,6 @@
 
 ## Install
 
-$ bin/setup
+$ bundle
 
 $ bin/rails s
